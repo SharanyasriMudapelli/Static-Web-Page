@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      justify-content: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+    .date {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    a {
+      padding: 10px 20px;
+      background-color: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    a:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Welcome to 23RH1A66K4's Web Page</h1>
+  <p>This is my.</p>
+  <div class="date" id="currentDate"></div>
+  <a href="dynamic.html">Visit Dynamic Page</a>
+
+  <script>
+    // Display today's date
+    const dateElement = document.getElementById("currentDate");
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = "Today's Date: " + today.toLocaleDateString(undefined, options);
+  </script>
+</body>
+</html>
